@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Portal.Domain;
 
 namespace Portal.Persistance
 {
@@ -9,6 +10,7 @@ namespace Portal.Persistance
         {
         }
 
+        public DbSet<BasketEvent> Events { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
